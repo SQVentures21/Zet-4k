@@ -124,7 +124,7 @@ max-height:100vh;
   .wrapper {
     width:100%;
     overflow: hidden;
-    width: 100%;
+    width: 96%;
     padding-top: 4px;
     margin: 0 auto;
     white-space: nowrap;
@@ -513,12 +513,12 @@ margin-top:100px;
 
 .logo
 {
-  margin-bottom:10vh;
+  margin-bottom:max(10vh,40px);
 }
 
 .payments
 {
-  margin-top:10vh;
+  margin-top:2vh;
 }
 
 .upper
@@ -539,6 +539,7 @@ margin-top:100px;
     background-size: 110% 110%;
     animation: shrink 5s infinite alternate;
   }
+  
   @keyframes shrink {
     0% {
       background-size: 110% 110%;
@@ -573,9 +574,22 @@ margin-top:100px;
   .payments-img{
     width:80%;
   }
+
+  .button-r
+  {
+    margin-bottom:2vh;
+  }
   
   
 
+
+}
+
+@media only screen and (max-height: 750px)
+{
+    .logo{
+      margin-bottom:2px;
+    }
 
 }
 
