@@ -472,6 +472,11 @@ margin-top:100px;
   
 }
 
+.top-text-animation-tablet
+{
+  display:none;
+}
+
 
 
 
@@ -481,10 +486,14 @@ margin-top:100px;
 
 @media only screen and (max-width: 1260px)
 {
+
+  
 .first
 {
   display: none;
 }
+
+
 
 .flex-main
 {
@@ -525,9 +534,47 @@ margin-top:100px;
 
   .container
   {
-    background-image: url("assets/zetcasino_games_2x_mobile.webp");
-    background-repeat: repeat;
+    background-image: url("assets/zetcasino_games_2x_desktop_new.webp");
+    height: 100vh;
+    background-size: 110% 110%;
+    animation: shrink 5s infinite alternate;
   }
+  @keyframes shrink {
+    0% {
+      background-size: 110% 110%;
+    }
+    100% {
+      background-size: 100% 100%;
+    }
+  }
+
+
+  .img-step-lighten
+  {
+    mix-blend-mode: lighten;
+  }
+
+  .top-text-animation-tablet
+  {
+    display:flex;
+    justify-content: center;
+    width:70%;
+    margin-inline: auto;
+    background: rgba(0, 0, 0, 0.8);
+    border-radius:50px;
+  }
+
+  .delay-tablet
+  {
+    animation: marquee 30s linear infinite!important;
+  }
+  
+
+  .payments-img{
+    width:80%;
+  }
+  
+  
 
 
 }
