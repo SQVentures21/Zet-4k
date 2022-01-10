@@ -135,6 +135,7 @@ max-height:100vh;
     font-size: 28px;
     text-transform: uppercase;
     border-radius: 50px;
+    height:48px;
   }
   
   .marquee {
